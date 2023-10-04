@@ -1,0 +1,8 @@
+ - cache do navegador
+
+ - inserir tutorial pra usar a camada lotes no tutorial geral (http://geosampa.prefeitura.sp.gov.br/PaginasPublicas/downloadArquivoOL.aspx?orig=DownloadTutorial&arq=Tutorial_SQL_GeoSAMPA.pdf&arqTipo=TUTORIAL)
+
+ - tudo no mesmo HTML usando javascript pra ler o que t� ativo a cada momento
+
+
+ - teste

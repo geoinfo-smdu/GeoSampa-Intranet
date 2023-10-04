@@ -1,0 +1,210 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/** grid (ref: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout) **/
+
+
+.wrapper{
+    display: grid; /* elemento que envolve todos os outros do grid */
+    grid-template-columns: 1fr repeat(8, 1fr) 1fr; /* divisão em 10 pedaços verticais, 1/8/1 */
+    padding: 10px;
+    column-gap: 10px;
+}
+
+.wrapper > *{
+    padding: 10px;
+}   
+
+.header,.footer{
+    grid-column: 1/11;
+    text-align: center;
+    border-bottom: black;
+    background-color: rgb(180, 180, 180);
+    border-radius: 5px;
+}
+
+.menu{
+    grid-column: 1/3; /* menu começa no pedaço 1 e termina no 3 (excluso) daqueles 10 */ 
+    position: static;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.main{
+    grid-column: 3/10; /* main começa no 3 e termina no 10 (excluso) daqueles 10 */
+}
+
+.maincards{
+    display: grid; /* wrapper dos cartões */
+    grid-column: 3/10;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.maincards > *{
+    padding: 20px; /* ">*" significa "tudo o que está abaixo" */
+}
+
+.card{
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: justify;
+    margin: 10px;
+    height: auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.right{
+    grid-column: 10/11;
+}
+
+/* barra de navegação lateral vertical*/
+#navbar{
+    font-size: larger;
+    font-family: Helvetica, sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(60, 60, 60);
+    padding: 10px;
+    color: white;
+}
+
+#navbar_sub, #navbar_sub_sub {
+    list-style-type: none;
+    font-size: small;
+    padding-left: 20px;
+}
+
+#navbar li a{
+    display: block; /* faz com que a seleção ressalte o bloco inteiro da linha, não só o link sozinho */
+    color: white;
+    padding: 3px;
+}
+
+#navbar li a:hover{
+    background-color: gray;
+    color: black;
+}
+
+.active{
+    background-color: white;
+    color: black;
+}
+
+/* cabeçalhos */
+h2 {
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+    font-size: large;
+    color: rgb(60, 60, 60);
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4{
+    font-size: medium;
+    color: rgb(60, 60, 60);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* tabelas em geral */
+
+table{
+    text-align: center;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+/* tabelas específicas */
+
+#tabelaDatum {
+    width: 30%;
+}
+
+#WMSeWFS{
+    width: 60%;
+}
+
+#extensoes{
+    text-align: left;
+    width: 70%;
+}
+
+#extensoes th{
+    padding: 5px;
+}
+
+#extensoes td{
+    padding: 5px;
+}
+
+#glossario{
+    text-align: left;
+}
+
+#glossario th{
+    padding: 5px;
+}
+
+#glossario td{
+    padding: 5px;
+}
+
+/** media query: celular **/
+/*** celular ***/
+
+@media only screen and (max-width:900px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        column-gap: 10px;
+    }
+
+    .wrapper > *{
+        grid-column: 1/2;
+    }
+
+    .maincards{
+        display: grid;
+        grid-column: 1/2;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/*** tablet ou pc com tela pequena ***/
+
+@media only screen and (min-width: 900px) and (max-width:1400px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        column-gap: 10px;
+    }
+
+    .wrapper > *{
+        grid-column: 1/2;
+    }
+
+    .maincards{
+        display: grid;
+        grid-column: 1/2;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}

@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <link rel="stylesheet" type="text/css" href="tutorial.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <title> Tutorial GeoSampa</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <button type="button" class="btn btn-primary btn-lg">Primary</button>
+
+            <div class="menu">
+                <ul id="navbar">
+                    
+                    <!-- lista com os links para as seções da página -->
+                    <li><a href="tutorial.html#0_intro"> Introdução </a></li>
+                        <ul id="navbar_sub">
+                            <li><a href="tutorial.html#0_1_site"> Site (MDC)</a></li>
+                            <li><a href="tutorial.html#0_2_3_6_download"> Download de arquivos </a></li>
+                            <li><a href="tutorial.html#0_3_webserv"> Web service (WMS e WFS) </a></li>
+                            <li><a href="tutorial.html#0_4_ajuda"> Ajuda </a></li>
+                            <li><a href="">teste</a></li>
+                        </ul>
+                        
+                    <li><a href="tutorial.html#1_metadados"> Metadados </a></li>
+                    
+                    <li><a href="tutorial.html#2_menu_camadas"> Menu de camadas </a></li>
+                        <ul id="navbar_sub">
+                            <li><a href="tutorial.html#2_1_lotes"> Lotes </a></li>
+                        </ul>
+
+                    <li><a href="tutorial.html#3_menu_ferram"> Menu de ferramentas </a></li>
+                        <ul id="navbar_sub">
+                            <li><a href="tutorial.html#3_0_cursor">Cursor</a></li>
+                            <li><a href="tutorial.html#3_1_zoom">Zoom e escala</a></li>
+                            <li><a href="tutorial.html#3_2_controlecamada">Exibe controle de camadas</a></li>
+                            <li><a href="tutorial.html#3_3_info">Informação da camada</a></li>
+                            <li><a href="tutorial.html#3_4_desfazSelecao">Desfazer seleção</a></li>
+                            <li><a href="tutorial.html#3_5_pesquisa">Pesquisa</a></li>
+                            <ul id="navbar_sub_sub">
+                                <li><a href="tutorial.html#3_5_1_subpref">Subprefeitura e distrito</a></li>
+                                <li><a href="tutorial.html#3_5_2_geodesi">Marco geodésico </a></li>
+                                <li><a href="tutorial.html#3_5_3_DLimg">Download de imagens/MDC/MDT/MDS</a></li>
+                                <li><a href="tutorial.html#3_5_4_licenc">Licenciamento</a></li>
+                                <li><a href="tutorial.html#3_5_5_sql">Setor-Quadra</a></li>
+                                <li><a href="tutorial.html#3_5_6_end">Endereço</a></li>
+                                <li><a href="tutorial.html#3_5_7_croqui">Área pública/planta</a></li>
+                                <li><a href="tutorial.html#3_5_8_iptu">IPTU</a></li>
+                                <li><a href="tutorial.html#3_5_9_zonea">Zoneamento</a></li>
+                            </ul>
+                            <li><a href="tutorial.html#0_2_3_6_download"> Download de arquivos </a></li>
+                            <li><a href="tutorial.html#3_7_salvaimg">Salvar mapa como imagem</a></li>
+                            <li><a href="tutorial.html#3_8_mede">Medir</a></li>
+                            <li><a href="tutorial.html#3_9_desenha">Desenho</a></li>
+                            <li><a href="tutorial.html#3_10_tresde">GeoSampa 3D</a></li>
+                            <li><a href="tutorial.html#3_11_imprimir">Impressão</a></li>
+                            <li><a href="tutorial.html#3_12_config">Configurações</a></li>
+                            <li><a href="tutorial.html#3_13_ajuda">Ajuda</a></li>
+                            <li><a href="tutorial.html#3_14_contato">Contato</a></li>
+                        </ul>
+
+                    <li><a href="tutorial.html#4_glossario"> Glossário </a></li>
+
+                    <li><a href="tutorial.html#5_sobre"> Sobre o GeoSampa </a></li>
+                        <ul id="navbar_sub">
+                            <li><a href="tutorial.html#5_1_quem"> Quem somos </a></li>
+                        </ul>
+
+
+                </ul>
+            </div>
+
+            <div class="main">
+                
+                <h1 id="0_intro" style="color: white;">Introdução</h2>
+                    <p style="font-size: 200%;text-align: center;font-weight: bold;">Bem-vindo ao</p>
+                        <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/iconeGeoSampa.png" 
+                        alt="GeoSampa" class="center"> 
+                            
+                        <p>
+                            Este tutorial auxilia no uso das ferramentas disponíveis e na navegação pelos mapas e camadas de dados do GeoSampa
+                            <a href="http://geosampa.prefeitura.sp.gov.br/PaginasPublicas/_SBC.aspx">(http://geosampa.prefeitura.sp.gov.br/)</a>.
+                        </p>
+
+                        <br><br>
+
+                        <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/0_telainicial.jpg" 
+                        alt="Tela inicial do GeoSampa mostrando as subprefeituras do município de São Paulo com o menu de ferramentas à esquerda e o menu de camadas à direita" 
+                        style="width: 90%;height: auto;">
+
+                        <br> <br>
+                        <p>
+                            Há três formas de usar e visualizar os dados do GeoSampa:
+                            <ol>
+                                <li>
+                                    <a href="#0_1_site">Usando o site</a> diretamente, seguindo o <a href=
+                                    "http://geosampa.prefeitura.sp.gov.br/PaginasPublicas/_SBC.aspx" target="_blank">link</a> dado acima
+                                </li>
+                                <li>Usando programas: 
+                                    <ol>
+                                        <li>
+                                            Offline, <a href="#0_2_3_6_download">baixando os arquivos</a>
+                                        </li>
+                                        <li>
+                                            Online, usando serviços web para acessar as camadas (<a href="0_3_webserv.html">WMS e WFS</a>)
+                                        </li>
+                                    </ol> 
+                                </li>
+                            </ol>
+                        </p>
+                
+                        
+                <h2 id="0_1_site">O site - Mapa Digital da Cidade</h2>
+                    <p>
+                        Esta é a 1ª tela do mapa. A seguir, serão descritas as alternativas de navegação e ferramentas disponíveis.
+                        <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/01_1_telainicial_comtooltips.png"
+                        alt="
+                        Tela inicial do GeoSampa com os principais elementos destacados.
+                        No canto superior direito, três botões:
+                        1) o botão 'Dados Abertos', para download dos arquivos mostrados no mapa;
+                        2) o botão 'Acessar metadados', para acesso à planilha dos metadados;
+                        3) o botão 'Acessar tutorial', para acesso ao endereço deste tutorial.
+
+                        No canto esquerdo da tela, o menu de ferramentas.
+                        No canto direito da tela, o menu de camadas.
+                        No canto inferior esquerdo da tela, a escala numérica e gráfica, que vai de 1 para 500 até 1 para 800 mil.
+                        No canto inferior direito da tela, as coordenadas UTM e geográficas, indicando a posição do cursor do mouse no mapa.
+                        ">
+
+                    </p>
+
+                <h2 id="0_2_3_6_download">Download de arquivos do GeoSampa</h2>
+                    
+                    <p>
+                        Todo o conteúdo do GeoSampa está disponível para download. Para baixar os arquivos, clique em
+                        <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/0236_1_botao_download.png" 
+                        alt="Botão para download de camadas">, escolha o tema de interesse e, em seguida, os arquivos desejados.
+                    </p>
+                    <p>
+                        De acordo com o tema escolhido será apresentada uma série de arquivos. Ao selecioná-los, o download será iniciado 
+                        automaticamente. 
+
+                        <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/0236_2_baixando.gif" 
+                        alt="
+                        Animação mostrando como baixar arquivos no GeoSampa.
+                        No canto superior direito da tela, clicar no primeiro botão da esquerda pra direita, escrito 'Dados Abertos'.
+                        Abrirá uma janela chamada Download de camadas, com um texto centralizado escrito 'Escolha o tema para download', com uma caixa dropdown para seleção do tema.
+                        Ao selecionar o tema, aparece outra caixa dropdown abaixo para selecionar a camada.
+                        Por fim, serão fornecidos vários formatos possíveis para baixar o arquivo da camada.
+                        ">
+
+                    </p>
+                    <p>
+                        Também podem ser baixados arquivos em formatos diversos pelo botão <a href="3_1_pesquisa.html">"Pesquisar"</a>.
+                    </p>
+                    <p>
+                        Lembre-se de verificar o local que serão armazenados os arquivos obtidos pelo download nas configurações de seu navegador.
+                    </p>
+
+                    <h3>Formatos dos arquivos</h3>
+                        <p>
+                            Alguns arquivos podem estar divididos por distritos (edificações, por exemplo) devido ao grande volume de dados.
+                        </p>
+                        
+                        <p>
+                            Alguns deles estão disponíveis em mais de um formato. São eles:
+                        </p>
+                        
+                        <!-- na tabela falar o que é cada um, por cima, e daí sim falar quais tão disponíveis nesse formato? -->
+                        
+                        <table id="extensoes">
+                            <tr>
+                                <td>PDF</td>            <td><b>Portable Document Format:</b> arquivo para visualização, contendo o mapeamento 
+                                    planialtimétrico do MDC</td>
+                            </tr>
+                            <tr>
+                                <td>DXF</td>           <td><b>Drawing Exchange Format:</b> arquivo em formato CAD contendo o mapeamento planialtimétrico do MDC. 
+                                    Os arquivos estão divididos por folhas do Sistema Cartográfico Metropolitano (SCM), representadas como quadrículas no mapa</td>
+                            </tr>
+                            <tr>
+                                <td>DXF/MDT</td>           <td>arquivo em formato CAD, contendo o modelo digital do terreno, ou seja, altimetria do MDC 
+                                    representada por nuvemde pontos 3D</td>
+                            </tr>
+                            <tr>
+                                <td>SHP</td>           <td><b>Shapefile</b></td>
+                            </tr>
+                            <tr>
+                                <td>KMZ</td>           <td><b>Keyhole Markup Zipped</b></td>
+                            </tr>
+                            <tr>
+                                <td>XLS/CSV</td>           <td>planilhas de dados e séries históricas</td>
+                            </tr>
+                        </table>
+                        <br>
+
+                    <h3>Sistemas de projeção</h3>
+                        <p>
+                            Nos casos de arquivos georreferenciados, você poderá escolher a extensão do arquivo de
+                            interesse (.shp, .kmz ou .dxf). <b>Recomendamos fortemente o uso do sistema de projeção cartográfica SIRGAS 2000, código EPSG 
+                            31983, conforme os padrões determinados para o Brasil.</b>
+                        </p>
+                    
+                    
+                    
+
+                <h2 id="0_3_webserv">Web Map Services (WMS) e Web Feature Services (WFS)</h2>        
+                
+                    <p>
+                        O GeoSampa permite acesso ao serviço de mapa pela Internet, o chamado Web Service. Esse protocolo possibilita a disponibilização
+                        dos mapas num formato portável <!-- não seria portátil? --> e multi-plataforma para armazenamento num repositório ou para transferência entre
+                        aplicações. Isso significa que os mapas do GeoSampa podem ser acessados por softwares como o QGIS, de forma “online”, sem a necessidade de
+                        baixar os arquivos.
+                    </p>
+                    <p>
+                        O Web Map Services (WMS) permite visualizar as camadas do GeoSampa com o mesmo estilo do site, 
+                        sem que se possa modificá-los.
+                        É no WMS que estão as fotos áereas da cidade, além das camadas vetoriais normais.
+                    </p>
+                    <p>
+                        O Web Feature Services (WFS) permite visualizar as camadas do GeoSampa e modificar seu estilo. 
+                        Todas as camadas vetoriais prsentes
+                        no WMS também estão presentes no WFS.
+                    </p>
+
+                    <table id="WMSeWFS">
+                        <tr>
+                            <th>Tipo do serviço</th>                        <th>Link</th>
+                            <!-- links sem formatação de link pra poder copiar no QGIS, e não clicar pra abrir-->
+                        </tr>
+                        <tr>
+                            <td>WMS - Camadas</td>      <td>http://wms.geosampa.prefeitura.sp.gov.br/geoserver/geoportal/wms</td>
+                        </tr>
+                        <tr>
+                            <td>WMS - Mapas Base</td>   <td>http://raster.geosampa.prefeitura.sp.gov.br/geoserver/geoportal/wms</td>
+                        </tr>
+                        <tr>
+                            <td>WFS - Camadas</td>      <td>http://wfs.geosampa.prefeitura.sp.gov.br/geoserver/geoportal/wfs</td>
+                        </tr>
+                    </table>
+
+                    <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/03_1_usandoWMSWFS.gif" 
+                        alt="
+                        Animação mostrando como usar os serviços web WMS e WFS no software QGIS.
+                        
+                        ">
+
+                <h2 id="0_4_ajuda">Ajuda</h2>
+                    <h3>Versão do navegador</h3>        
+                        <p>
+                            Verifique se seu navegador atende os requisitos da página inicial:
+
+                            Esta aplicação é compatível com os browsers Google Chrome, Firefox, Internet Explorer e Safari.
+                            <br><br>
+                            Recomenda-se o uso das seguintes versões:
+                            <br>
+                            Internet Explorer: 9 ou superior. <br>
+                            Safari: 5 ou superior. <br>
+                            Google Chrome: 34 ou superior. <br>
+                            Firefox: 28 ou superior. <br>
+                            Microsoft Edge: versão 25 ou superior.
+                            
+                            <br> <br>
+                            Você poderá consultar essa orientação sempre que quiser clicando no botão 
+                            <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/04_1_botaointerrogacao.png" alt="Botão de ajuda representado por uma interrogação">.
+                        </p>
+                        <p>
+                            Os computadores que possuem a versão antiga do navegador Internet Explorer não são compatíveis com o site.
+                            Caso não seja possível atualizar, recomendamos a instalação de outro navegador, nas versões indicadas.
+                        </p>
+                    <h3>Outros problemas com navegador: bloqueador de pop-up e cache</h3>
+                        <p>
+                            Verifique se seu bloqueador de “pop-up” está desativado. Caso contrário, alguns downloads podem ser bloqueados.
+                            Alguns erros podem ser removidos limpando o cache do seu navegador. Para isso, basta acionar o atalho 
+                            Ctrl + Shift + Del.
+                        </p>
+
+                <h1 id="1_metadados">Metadados</h1>
+
+                <h2>O que são? Dados sobre os dados</h2>
+                    <p>
+                        Os Metadados são as informações sobre cada uma das camadas, com o objetivos de proporcionar a correta 
+                        utilização e interpretação dos dados. Por exemplo: quem gerou o dado, quando, qual o sistema de projeção 
+                        cartográfica, entre outros dados. Eles podem também ajudar a navegação no site, para encontrar os temas e 
+                        subtemas de alguma camada que estiver procurando.
+                    </p>
+                
+                <h2>Como consultar?</h2>
+                    <p>
+                        Ao clicar no botão <b>Metadados</b>, localizado no canto superior direito, abrirá um arquivo com diversas planilhas 
+                        (abas):
+                    </p>
+                    <p>
+                        <b> Consulta aos metadados:</b> Planilha para consulta de metadados das camadas, sistemas e downloads.
+                    </p>
+                    <p>
+                        <b> Lista de metadados:</b> Listagem de camadas, sistemas  e downloads disponíveis, que está vinculada à 1ª planilha.
+                    </p>
+                    <p>
+                        <b> Estrutura:</b> Camadas, sistemas e downloads, organizados conforme aparecem na janela de controle de camadas.
+                    </p>
+                            
+                    <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/1_1_metadados.gif" 
+                    alt="Encontrando, baixando e consultando os metadados">
+
+                <h1 id="2_menu_camadas">Menu de camadas</h1>
+
+                <h2> Mapas de fundo </h2>
+                    <p>
+                        Você poderá escolher um dos mapas disponíveis como plano de fundo. O mapa base poderá ser alterado a qualquer 
+                        momento durante sua navegação. Só é possível visualizar um por vez. Pode-se deixar sem plano de fundo.
+                    </p>
+
+                <h2>As camadas</h2>
+                    <p>
+                        Aqui está o conteúdo do mapa com as informações georreferenciadas de várias secretarias e órgãos públicos.
+                    </p>
+                    <p>
+                        As camadas estão organizadas em grupos temáticos. Você poderá abrir o grupo clicando no botão
+                        + para habilitar a camada de interesse.
+                    </p>
+                    <br>
+                    <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/2_1_menucamadas_abrefecha.gif"
+                    alt="
+                    Animação usando o menu de camadas do GeoSampa
+                    ">
+
+                <h2> Atributos das camadas </h2>
+                    <p>
+                        <b> Resumo do conteúdo:</b> posicionando o cursor do mouse sobre o nome da camada, você poderá ver um resumo do seu conteúdo.
+                    </p>    
+                    <p>
+                        <b> Etiqueta de rótulo:</b> clique para que os rótulos das camadas selecionadas apareçam no mapa.
+                    </p>
+                    
+                    <p>
+                        Algumas camadas contam com <b>legendas</b>. Clique no ícone colorido para visualizá-las.
+                    </p>
+                    <br> <br> <br>
+                    <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/2_2_menucamadas_etiqueta_tooltip_tematico.gif" 
+                    alt="
+                    Animação do menu de camadas do GeoSampa, clicando em 
+                    'Etiqueta de rótulo', tooltip da camada e botão 'Legenda' de mapa temático
+                    ">
+
+                <h2 id="2_1_lotes">Camada de lotes</h2>
+                    <p>
+                        O GeoSampa disponibiliza informações fiscais do lote, numa camada que é atualizada pela Secretaria da Fazenda. 
+                        Essa camada substitui os croquis fiscais, que não são atualizados desde junho de 2019.
+                    </p>
+                    <p>
+                        Todas as informações do croqui fiscal estão no painel de informações (acessado pelo botão “i”) conectado diretamente 
+                        ao banco de dados da Secretaria da Fazenda.
+                    </p>
+                    <br>
+                    <p>
+                        1° Aproxime o zoom para possibilitar a visualização e permitir acionar a camada;
+                    </p>
+                    <p>
+                        2° Ligue a camada “Lotes”, no grupo: Cadastro / Cadastro Fiscal / <ins>Lote</ins>;
+                    </p>
+                    <p>
+                        3° Clique no botão “i” (Informação), em seguida, no lote de interesse. Aparecerá uma caixa de diálogo comas informações fiscais do lote.
+                    </p>
+                    <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/21_1_ex_botao_i_lote.gif" 
+                    alt="
+                    Exemplo do botão 'i' aplicado à camada 'Lote'
+                    ">
+                    <br>
+                    <p>
+                        Em lotes ocupados por condomínio aparecerão as informações de cada unidade.
+                    </p>
+                    <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/21_2_ex_botao_i_lote_condominio.gif" 
+                    alt="Exemplo do botão 'i' aplicado à camada 'Lote' no caso de condomínio">
+
+                
+
+                <h1 id="3_menu_ferram">Menu de ferramentas</h1>
+                
+                <h2 id="3_0_cursor">Cursor</h2>
+                    <p>O <b>cursor</b> assume diferentes formas dependendo da sua função:</p>
+                        <ol type="1">
+                        <li>
+                            <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/30_1_seta.png" alt="Cursor em forma de seta" style="width: 30px;height: 30px;">
+                            seta = escolher funcionalidades (botões, camadas etc) e navegação pelo mapa.
+                        </li>
+                        <li>
+                            <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/30_2_mira.png" alt="Cursor em forma de mira" style="width: 30px;height: 30px;">
+                            mira = requer um ponto ou uma área para pesquisa no mapa.
+                        </li>
+                        <li>
+                            <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/30_3_dedo.png" alt="Cursor em forma de dedo apontando" style="width: 30px;height: 30px;"> 
+                            dedo = seleção dentro de uma caixa de diálogo ou janela.
+                        </li>
+                        <li>
+                            <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/30_4_quadrado.png" alt="Cursor em forma de quadrado" style="width: 30px;height: 30px;">
+                            quadrado = aparece paramedir distância, área e ângulo (não há aderência / atração / ímã); 
+                            a precisão é limitada pela escala.</li>
+                        <li>
+                            <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/30_5_cruz.png" alt="Cursor em forma de cruz" style="width: 30px;height: 30px;">
+                            cruz = arrasta caixa de diálogo/janela.
+                        </li>
+                        <li>
+                            <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/30_6_cursortexto.png" alt="Cursor para digitação de texto" style="width: 30px;height: 30px;">
+                            cursor de texto = requer preenchimento de um campo.
+                        </li>
+                        </ol>
+
+                <h2>Botões - visão geral</h2>
+                    <p> O menu de ferramentas contém os seguintes botões:</p>
+                        <ul>
+                            <li id="3_1_zoom">
+                                <p>
+                                    <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/31_1_zoom_maismenos.png" 
+                                    alt="Botões mais e menos representando maior zoom ou menor zoom no mapa"> 
+                                    <b>Zoom mais / Zoom menos:</b> aproxima ou afasta. 
+                                    Ao alterar o zoom, a escala localizada no canto inferior esquerdo do mapa também é alterada. 
+                                    Ainda é possível definir a escala numérica desejada digitando-a diretamente no campo "escala".
+                                    <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/31_2_escalagrafica_norte.gif">
+                                </p>
+
+                                <p>
+                                    Quanto maior a escala, mais detalhada a imagem: 1:500 mais detalhe, 1:800.000 menos detalhe, por exemplo.
+                                    Cada camada possui um limite de visualização adequado à sua legibilidade.
+                                    Caso necessário, deve-se aumentar a escala até que a camada fique habilitada, pois só é possível ligar à camada
+                                    se o zoom for adequado a sua visualização.
+                                    Por exemplo, a camada “Lote” só pode ser visualizada em escala a baixo de 1:5000 (exclusive).
+                                </p>
+                            </li>
+
+                            <li id="3_2_controlecamada">
+                                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/32_1_controle_camadas.png" alt="">
+                                <b>Controle de camadas:</b> exibe/oculta o controle de camadas.
+                                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/32_2_controle_camadas_vendo.gif" alt="">
+                            </li>
+
+                            <li id="3_3_info">
+                                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/33_1_botao_informacao.png" alt="">
+                                <b>Informação:</b> apresenta resumo dos atributos da feição da camada escolhida, desde que ligada e visível.
+                                Para isso, posicionar e clicar com a mira no local da feição de interesse. Para selecionar mais de um item, 
+                                pressione e segura o botão CTRL do teclado enquanto clica com o mouse.
+                                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/33_2_botao_informacao_vendo.gif" alt="">
+                            </li>
+                            
+                            <li id="3_4_desfazSelecao">
+                                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/34_1_desfazer_selecao.png" alt="">
+                                <b>Desfazer seleção:</b>
+                                com camada(s) de interesse ligada(s) o botão fica habilitado. Ao ser acionado, desfaz a seleção.
+                                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/34_2_desfazer_selecao_vendo.gif" alt="">
+                            </li>
+
+                            <li>
+                                <p>
+                                    <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/3_1_lupa.png" alt="Botão de pesquisa representado por uma lupa">
+                                    <b>Pesquisa:</b> 
+                                    esta ferramenta apresenta 10 abas com diversas funções, como localizar uma subprefeitura ou um lote, 
+                                    acessar outras bases de dados de forma integrada ou arquivos de imagens aéreas.
+                                </p>
+
+                                <p>
+                                    <a href="#3_5_pesquisa">Para mais detalhes, clique aqui</a>.
+                                </p>
+                                
+                            </li>
+
+                            <li>
+                                <p>
+                                    <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/0236_1_botao_download.png">
+                                    <b>Download de arquivos:</b> este botão abre uma janela que permite baixar os arquivos das camadas
+                                    que podem ser visualizadas no mapa.
+                                </p>
+                                <p>
+                                    <a href="#0_2_3_6_download">Para mais detalhes, clique aqui.</a>
+                                </p>
+                                
+                            </li>
+
+                            <li id="3_7_salvaimg">
+                                <p>
+                                    <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/37_1_printTela.png"
+                                    alt="Botão que salva a visualização atual do mapa como uma imagem, representada por um disquete">
+                                    <b>Salvar mapa como imagem:</b> ao clicar neste botão, será gerada uma imagem idêntica à que
+                                    aparece na tela.
+                                </p>
+
+                                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/37_2_printTela_vendo.gif" alt="">
+
+                            </li>
+
+                            <li id="3_8_mede">
+                                <p>
+                                    <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/38_1_calcular_dist_area_ang.png" 
+                                    alt="Botão para cálculo de distância, área e ângulo, representado por uma régua ou paquímetro">
+                                    <b>Medir distância, área e ângulo:</b>
+                                    Ao clicar neste botão o cursor estará habilitado para medir a distância entre pontos, a área de um polígono ou o
+                                    ângulo entre dois segmentos. Escolha a opção desejada, clique no ponto inicial e mova o cursor até o ponto seguinte.
+                                    Com um clique, você continuará traçando um segundo segmento e assim por diante. As distâncias de cada segmento traçado ficarão registradas nos 
+                                    trechos da medição e a área, no interior do polígono. Para encerrar a medição, dê dois cliques no último ponto.
+                                    O resultado da medição não tem caráter documental.
+                                </p>
+                                <br>
+                                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/38_2_medida_distância.gif" 
+                                    alt="Exemplo de medida de distância">
+
+                            </li>
+
+                            <li id="3_9_desenha">
+                                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/39_1_desenho.png" alt="Botão de desenho no mapa, representado por uma paleta">
+                                <b>Desenho:</b> Ao clicar na ferramenta a janela será habilitada. 
+                                Selecione o tipo de desenho que deseja inserir. 
+                                Escolha a cor de sua preferência e, em seguida, insira o desenho no mapa. 
+                                Seu desenho poderá ser movido ou editado utilizando as ferramentas da parte inferior da janela.
+                                Se desejar apagar apenas um dos elementos inseridos, clique no botão 
+                                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/39_2_limpar_desenho_selecionado.png"> e, em seguida, no desenho desejado. 
+                                Os desenhos inseridos ficarão ativos apenas durante cada seção de navegação. 
+                                Caso feche o GeoSampa, ou desligue o navegador, os desenhos não serão salvos.
+                                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/39_3_janela_desenhar_no_mapa.png" alt="Janela com ferramentas de desenho, indicando 
+                                funcionalidades de cada uma delas: tipo de desenho, cor do desenho e ferramentas de edição do desenho" style="width: 50%;height: 50%;" class="center">
+                                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/39_4_fazendo_desenho.gif" 
+                                alt="
+                                Exemplo de uso da ferramenta de desenho:
+                                1) seleção da cor vermelha
+                                2) desenhar polígono
+                                3) mover vértice
+                                4) mover polígono
+                                5) apagar polígono
+                                ">
+                            </li>
+                            
+                            <li>
+                                <p>
+                                    <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/310_1_LIDAR.png" alt="GeoSampa 3D">
+                                    <b>LIDAR (GeoSampa 3D):</b> 
+                                    esta ferramenta leva a um visualizador que permite ver a cidade de São Paulo em 3D, conforme capturado por sensores LIDAR em 2017.
+                                </p>
+
+                                <p>
+                                    <a href="#3_10_tresde">Para mais detalhes, clique aqui</a>.
+                                </p>
+                                
+                            </li>
+
+                            <li id="3_11_imprimir">
+                                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/311_1_impressao.png">
+                                <b>Impressão:</b>
+                                a ferramenta de impressão permite a configuração de um título para seu mapa e a opção pela exibição de escala e legenda.
+                                Note que a legenda que aparecerá na impressão estará de acordo com o mapa base e as 
+                                camadas habilitadas. A página de impressão está configurada no formato A4. 
+                                O enquadramento na prévia de impressão não é idêntico à tela. 
+                                É possivel mover a imagem dentro da moldura. 
+                                Se necessário, altere a escala da tela para uma visualização adequada. 
+                                Para imprimir, clique no ícone da impressora no canto direito inferior do mapa.
+                                Na tela de impressão que se abre, pode-se escolher uma impressora que converta para o formato PDF, 
+                                o que lhe permitirá alterar o tamanho da impressão. 
+                                Neste caso, alertamos quanto à possibilidade de distorções. 
+                                Na parte de baixo será exibida a legenda do mapa base e das 
+                                camadas habilitadas. Também serão mostradas as informações das feições selecionadas com o botão “i”.
+
+                                <p>
+                                    Para imprimir seu mapa clique no botão  <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/311_1_impressao.png" 
+                                    alt="Botão de imprimir, representado por uma impressora">
+                                </p>
+                                <p>
+                                    Lá você poderá escrever um título a sua escolha (opcional) e também optar pela exibição da escala 
+                                    gráfica e legenda.
+                                </p>
+                                <p>
+                                    Clicando em "visualizar impressão" você poderá verificar, além da figura do mapa, outros dados como a 
+                                    fonte da informação (link), data e hora da consulta e a legenda das camadas ativas.
+                                </p>
+                                <p>
+                                    A impressão está padronizada para o formato A4, garantindo, portanto a confiabilidade da escala numérica 
+                                    informada no mapa.
+                                </p>
+                                <br>
+                                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/311_2_exemplo_impressão.gif" 
+                                    alt="">
+                            </li>
+
+                            <li id="3_12_config">
+                                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/312_1_configuracoes.png">
+                                <b>Configurações:</b> exibe/oculta na tela a escala gráfica e as coordenadas 
+                                (UTM ou geográfica).
+                                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/312_2_usando_configuracoes.gif">
+                            </li>
+
+                            <li id="3_13_ajuda">
+                                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/313_1_ajuda.png">
+                                <b>Ajuda:</b> exibe uma caixa de diálogo informando todos os botões do menu lateral do 
+                                Geosampa, as informações sobre os navegadores compatíveis e os programas utilizados no desenvolvimento do GeoSampa.
+                                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/313_2_usando_ajuda.gif">
+                            </li>
+
+                            <li id="3_14_contato">
+                                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/314_1_contato.png">
+                                <b>Contato:</b> pode ser utilizado para enviar qualquer tipo de mensagem referente ao portal.
+                                Para entrar em contato com a equipe, preencha nome, e-mail e envie sua mensagem.
+                                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/314_2_usando_contato.gif">
+                            </li>
+                            
+                            <li>
+
+                            </li>
+                        </ul>
+                        
+                <h2 id="3_5_pesquisa">Botão de pesquisa</h2>
+                    <p>
+                        Esta ferramenta apresenta 10 abas com diversas funções, como localizar uma subprefeitura ou um lote, 
+                        acessar outras bases de dados de forma integrada ou arquivos de imagens aéreas.
+                    </p>
+                    <h3 id="3_5_1_subpref">Subprefeitura e distrito</h3>
+                        <p>
+                            A 1° aba, no canto superior esquerdo, chama-se “Subprefeitura”. 
+                            Ao clicar, aparecerá uma caixa com o nome de cada uma das 32 Subprefeituras. 
+                            Ao selecionar uma com um clique, o zoom aproximará a Subprefeitura escolhida para visualização. 
+                            A próxima aba “Distrito” funciona da mesma forma: selecionando um dos 92 distritos, o zoom aproximará sua visualização.
+
+                            <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/351_1_selecionaSubDistr.gif">
+                        </p>
+                        
+                    <h3 id="3_5_2_geodesi">Marco geodésico </h3>
+                        <p>
+                            Os marcos geodésicos são pontos fixos no solo, onde são gravadas altitude, latitude e longitude. 
+                            Foram implantados pelo Instituto Brasileiro de Geografia e Estatística (IBGE), Exército Brasileiro (EB) e 
+                            prefeituras. 
+                            Nessa aba aparece uma lacuna onde deve ser digitado o número do pilar. Um zoom aproximará a imagem do marco 
+                            solicitado. Também é possível acessar o pilar a partir do mapa.
+
+                            <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/352_1_sagaMarcoGeodesico.gif">
+
+                        </p>
+                    <h3 id="3_5_3_DLimg">Download de imagens/MDC/MDT/MDS</h3>
+                        <p>
+                            Nesta aba, podem ser baixados arquivos de mapas articulados, isto é, aqueles em que o volume de informações é grande o suficiente para exigir a separação
+                            da cidade em quadrantes. Ainda assim, é possível baixar mapas de vários quadrantes de uma vez só, segurando o botão SHIFT enquanto seleciona.
+                        </p>
+
+                            <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/353_1_DLimg.gif">
+
+                        <!-- 
+                            
+                            
+                            
+                            
+                            
+                            
+                            tabela explicando cada mapa articulado disponível? ou então uma seção inteira, tipo do MDT
+                        
+                                    
+                        
+                        
+                        
+                        
+                        
+                        
+                        -->
+                
+                        <h4 id="3_5_3_1_MDT">Como usar os arquivos dos modelos digitais de terreno e superfície (MDT e MDS)</h4>
+                            <p>
+                                Há uma série de programas livres ou pagos específicos para visualização e processamento dos dados de sensores 
+                                LASER/LiDAR em formato LAZ. Este é um formato padrão para arquivos laser. Este arquivo é uma "nuvem" com 
+                                dezenas de milhares de pontos (com coordenadas de posição x,y,z e alguns outros atributos) 
+                                em um formato compactado que pode ser descompactado e transformado em outros formatos através do laszip.exe 
+                                (um software de uso livre).
+                            </p>
+                            <p>
+                                Para visualização, por exemplo, o <a href="https://plas.io/" target=_blank>plas.io</a> funciona 
+                                diretamente no navegador sem a necessidade de instalação de um programa. 
+                                Para processamento, o <a href="https://plas.io/" target=_blank>LASTools</a> pode ser baixado sem custo 
+                                <!-- até certo ponto, bom dizer isso--> enquanto o 
+                                <a href="http://www.danielgm.net/cc/release/" target=_blank>Cloud Compare</a> e o 
+                                <a href="http://forsys.cfr.washington.edu/fusion/fusion_overview.html" target=_blank>Fusion</a> 
+                                são soluções livres.
+                            </p>
+                            <p>
+                                O AutoCAD e o ArcGIS entre outros programas vendidos comercialmente também possuem módulos para visualização e 
+                                processamento LiDAR em suas versões atuais.
+                            </p>    
+
+                    <h3 id="3_5_4_licenc">Licenciamento</h3>
+                        <p>
+                            O Sistema de Licenciamento Eletrônico de Construção é gerenciado pela Secretaria Municipal de Licenciamento e 
+                            compila os seguintes processos:
+                            <ol>
+                                <li>
+                                    Licenciamento de edificação nova ou reforma para os seguintes usos:
+
+                                    <ul>
+                                        <li>Residências unifamiliares;</li>
+                                        <li>Casas geminadas;</li>
+                                        <li>Casas sobrepostas;</li>
+                                        <li>Usos não residenciais até 1.500m² de área construída;</li>
+
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    Pedidos de licenças complementares tais como:
+                                    <ul>
+                                        <li>Estande de vendas;</li>
+                                        <li>Grua;</li>
+                                        <li>Tapume;</li>
+                                        <li>Desdobro e remembramento de lote;</li>
+                                        <li>Alvarás de demolição;</li>
+                                        <li>Certificado de conclusão;</li>
+                                        <li>Troca de responsabilidade técnica;</li>
+                                        <li>Comunicação de obras de emergência;</li>
+                                        <li>Outras comunicações.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            
+                            É possível consultar o SLC-e usando o GeoSampa, preenchendo o número SQL do lote.
+
+                            <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/354_1_SLCe.gif">
+
+                        </p>
+                    <h3 id="3_5_5_sql">Setor-Quadra</h3>
+                        <p>
+                            Na aba Setor-Quadra é possível encontrar um lote a partir de seu número SQL, 
+                            aproximando a visualização do lote após o preenchimento das lacunas.
+                            <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/355_1_SQL.gif">
+
+                            O código SQL (setor-quadra-lote) é a identificação do lote no Cadastro Imobiliário Fiscal da prefeitura. Este código 
+                            corresponde ao número do contribuinte e pode ser localizado no boleto de pagamento do IPTU.
+
+                        </p>
+
+                    <h3 id="3_5_6_end">Endereço</h3>
+                        <p>
+                            Na aba Endereço, deve-se preencher, no mínimo, o campo "logradouro" (nome da rua). O “tipo” (rua, avenida, viela, estrada etc.) e o “título” (Santo, Padre, Engenheiro etc.) 
+                            não são obrigatórios, mas podem ajudar a refinar sua busca. Caso utilizados, insira-os nos campos específicos e não como nome do logradouro.
+                            Na pesquisa por endereço e número, o ponto resultante aparecerá dentro do lote correspondente. 
+                            Caso o número pesquisado não conste no banco de dados, a pesquisa indicará o local mais próximo no eixo da via.
+                            
+                            <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/356_1_end.gif">
+                            
+                        </p>
+
+                    <h3 id="3_5_7_croqui">Área pública/planta</h3>
+                        <p>
+                            Para localizar e fazer o download dos arquivos, habilite a respectiva camada: Área Cedida, Cadastro de Área Pública ou Croqui Patrimonial (grupo Cadastro > Área Pública) ou 
+                            a camada Utilidade Pública e Interesse Social (grupo Legislação Urbana)
+                            Para localizar e fazer o download dos documentos habilite a respectiva camada.
+
+                            <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/357_1_croqui.gif">
+
+                        </p>
+                        
+                    <h3 id="3_5_8_iptu">IPTU</h3>
+                        <p>
+                            Para consultar informações do IPTU de um lote, deve-se preencher as informações de setor, quadra e lote.
+
+                            <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/358_1_iptu.gif">
+
+                    <h3 id="3_5_9_zonea">Zoneamento</h3>
+                        <p>
+                            Para consultar dados de zoneamento de um lote, localize a aba Zoneamento e preencha as informações de setor, quadra e lote .
+                            <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/359_1_SisZon.gif">
+                        </p>
+                        <p>
+                            O resultado apresenta: zoneamento, parâmetros de ocupação, quota ambiental e notas - 
+                            quadro 3 da lei n° 16.402/2016.
+                        </p>
+
+                <h2 id="3_10_tresde">GeoSampa 3D</h2>
+                    <p>
+                            
+                    </p>
+                
+                <h1 id="4_glossario">Glossário</h1>
+                    <table id="glossario">
+                        <tr>
+                            <td>MDC</td>               <td>Mapa Digital da Cidade</td>
+                        </tr>
+                        <tr>
+                            <td>RMSP</td>               <td>Região Metropolitana de São Paulo</td>
+                        </tr>
+                        <tr>
+                            <td>UTM</td>               <td>Sistema de coordenadas cartesianas - Universal Transversa de Mercator</td>
+                        </tr>
+                        <tr>
+                            <td>UBS</td>               <td>Unidade Básica de Saúde</td>
+                        </tr>
+                        <tr>
+                            <td>IPVS</td>               <td>Índice Paulista de Vulnerabilidade Social</td>
+                        </tr>
+                        <tr>
+                            <td>PDE</td>               <td>Plano Diretor Estratégico</td>
+                        </tr>
+                        <tr>
+                            <td>ZEIS</td>               <td>Zona Especial de Interesse Social</td>
+                        </tr>
+                        <tr>
+                            <td>EDIFICAÇÃO</td>               <td>Obra coberta destinada a abrigar atividade humana ou qualquer instalação, equipamento e 
+                                material. (Lei nº 16.642/2017 - Código de Obras)</td>
+                        </tr>
+                        <tr>
+                            <td>IMÓVEL</td>               <td>O lote, público ou privado, edificado, ou não, assim definido:
+                                <ol type="A">
+                                    <li>imóvel edificado: aquele ocupado total ou parcialmente com edificação permanente;</li>
+                                    <li>imóvel não-edificado: aquele não ocupado ou ocupado com edificação transitória, em que não se exerçam 
+                                        atividades nos termos da legislação de uso e ocupação do solo. LOGRADOURO-Passeio público. 
+                                        <!-- conferir essa parte de 'LOGRADOURO'-->
+                                    </li>
+                                </ol>  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LOTE</td>               <td>A parcela de terreno resultante de loteamento, desmembramento ou desdobro, contida em uma 
+                                quadra com, pelo menos, uma divisa lindeira a via de circulação oficial.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LOTEAMENTO</td>               <td>É a subdivisão de glebas em lotes destinados à edificação, com aberturas de novas vias de
+                                circulação, de logradouros públicos ou prolongamento, modificação ou ampliação das vias já existentes. 
+                                O loteamento é precedido de diretrizes para fixação das áreas verdes, institucionais e sistema viários públicos 
+                                e eventuais faixas não edificáveis (SEHAB).</td>
+                        </tr>
+                        <tr>
+                            <td>LPUOS</td>               <td>Legislação <!-- Poderia escrever 'Lei' ao invés de 'Legislação'--> de Parcelamento, Uso e 
+                                Ocupação do Solo.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>NON AEDIFICANDI</td>               <td>Supressão de vegetação localizada em área de preservação permanente. 
+                                Lote onde não pode haver nenhum tipo de assentamento urbano, restrito a áreas de conservação ambiental, próximo a 
+                                represas, etc.</td>
+                        </tr>
+                    </table>
+
+                <h1 id="5_sobre">Sobre o GeoSampa</h1>
+                <h2>Histórico</h2>
+                    <p>O MDC é o suporte cartográfico do Sistema de Informações
+                        Geográficas do Município de São Paulo (SIG-SP), regulamentado pelo
+                        Decreto 57.770, de 3 de julho de 2017.
+                    </p>
+                    <p>O Mapa Digital da Cidade (MDC), é uma base cartográfica digital
+                        cadastral nas escalas 1:1.000, na área urbana, e 1:5.000, na área rural
+                        do Município de São Paulo, resultado de levantamento
+                        aerofotogramétrico realizado no ano de 2004, com recursos do
+                        Programa de Modernização da Administração Tributária (PMAT), do
+                        Banco Nacional do Desenvolvimento (BNDES).
+                    </p>
+                    <p>
+                        A construção do MDC incluiu a implantação da Rede Básica de
+                        Referência Geodésica do Município de São Paulo, com 302 marcos,
+                        cobertura aerofotogramétrica colorida com cerca de 12 mil fotos, apoio
+                        de campo planialtimétrico, aerotriangulação, restituição digital, modelo
+                        digital do terreno, reambulação, edição, preparação de arquivos para
+                        uso em sistema de informações geográficas, elaboração de mais de
+                        quatro mil ortofotos digitais, construção de base de dados cadastrais de
+                        imóveis e logradouros, entre outros produtos e serviços.
+                    </p>
+                    <p>
+                        Esses trabalhos permitiram a modernização do sistema cartográfico
+                        municipal, que já em 1978 foi digitalizado em um sistema pioneiro
+                        denominado Geocodificação de Logradouros – GEOLOG. Os desafios
+                        da atualização e disseminação desses dados demandam permanente
+                        evolução tecnológica e organizacional.
+                    </p>
+                    <p>
+                        Em 2017, foi realizado um aerolevantamento que produziu além de ortofotos 
+                        e mapeamento detalhado da vegetação, a cobertura de toda a cidade por dados LASER/LiDAR.
+                    </p>
+                <h2>O GeoSampa</h2>
+                    <p>
+                            O resultado dessas atividades pode ser usado no portal GeoSampa, disponível desde dezembro de 2014.
+                    </p>
+                    <p>
+                        A partir do mapa também é possível realizar download de arquivos
+                        georreferenciados, mapas, plantas, croquis, imagens de satélite, fotos
+                        aéreas e ortofotos.
+                    </p>
+                    <p>
+                        Atualmente, são disponibilizadas mais de 200 camadas temáticas com
+                        informações cadastrais (310 setores, 55.000 quadras e 2,5 milhões de
+                        lotes fiscais), a localização de cada uma das cerca de 650.000 árvores
+                        do sistema viário, os perímetros do zoneamento da Cidade, a
+                        localização dos equipamentos públicos nas áreas de educação,
+                        saúde, assistência social, cultura, esportes e lazer, a
+                        localização e situação das 400 áreas de risco do município. Arquivos
+                        em formatos .shp, .kmz, .dxf, .pdf e .jpg também podem ser baixados
+                        contendo tanto as informações vetoriais do mapa como fotos, ortofotos
+                        e cartas.
+                    </p>
+                    <p>
+                        Para o servidor, o sistema tem permitido a redução do tempo de
+                        resposta a processos administrativos pelo acesso único e simplificado
+                        aos dados. Para o público externo tais como órgãos públicos estaduais
+                        e federais, estudantes, empresas, conselhos gestores, organizações
+                        não governamentais, comunidades digitais e moradores, viabiliza-se o
+                        acesso e a transparência das informações públicas. O acesso a um
+                        único portal para consulta e aquisição de arquivos geoespaciais em
+                        formato aberto permite assim, o acompanhamento dos dados de
+                        múltiplos temas emuma única aplicação.
+                    </p>
+                <h2>Projeto SIG-SP</h2>
+                    <p>
+                        O SIG-SP é o instrumento para a produção, manutenção, análise, disseminação e
+                        divulgação de informações mapeadas como subsídios para o planejamento,
+                        implementação e gestão de políticas públicas nas áreas de atuação do governo
+                        municipal, priorizando o atendimento ao cidadão.
+                    </p>
+                    <p>
+                        O sistema é constituído, de forma integrada, pelos subsistemas de pessoas,
+                        procedimentos organizacionais, dados, programas e equipamentos computacionais,
+                        abrangendo os dados sociais, culturais, econômicos, financeiros, patrimoniais,
+                        urbanísticos, administrativos, físico-territoriais, ambientais, geológicos, geográficos,
+                        cartográficos e outros de interesse do Município, sendo, essencialmente, um sistema
+                        aberto, dinâmico e permanente, emconstante adequação à realidade urbana.
+                    </p>
+                    <p>
+                        Nesses termos e diante do grande volume de informações disponíveis na
+                        administração municipal, a Prefeitura de São Paulo optou pela adoção de uma visão
+                        integradora. Ao invés da construção de um novo sistema ou mesmo da migração de
+                        todos os dados para uma base única, optou-se pela criação de um ambiente
+                        compartilhado que integre dados geográficos de referência (distritos, quadras fiscais,
+                        cartografia, por exemplo) aos sistemas de informações já existentes, permitindo a
+                        visualização das informações oriundas destes diretamente no mapa. A
+                        disponibilização de um volume de informações de aproximadamente 10 terabytes a
+                        uma grande quantidade de usuários representa um desafio, principalmente, se
+                        consideradas as questões como integridade e segurança dos dados.
+                    </p>
+                    <p>
+                        O projeto de construção do SIG-SP vem sendo implantado passo a passo, de
+                        modo a permitir a disponibilização de ferramentas aos usuários já nos
+                        primeiros meses de projeto. Como principais etapas, destacam-se 1) a
+                        construção da base corporativa de dados pela organização dos dados
+                        cartográficos (Mapa Digital da Cidade), cadastrais (setor, quadra, lotes,
+                        logradouros) e temáticos; 2) a implantação de um sistema de infra-estrutura
+                        dos dados municipais; 3) elaboração do catálogo de metadados e 4) a
+                        integração das bases e sistemas já existentes via conversão de dados
+                        espaciais.
+                    </p>
+                    <p>
+                        Para garantir a sustentabilidade do projeto, foram utilizadas geotecnologias
+                        compatíveis com as diretrizes nacionais de dados espaciais e ainda
+                        tecnologias GEOSERVER / OpenLayers para a construção da Infraestrutura
+                        de Dados Espaciais, além do portal demapas. Trata-se do primeiro projeto de
+                        geoprocessamento na Prefeitura de São Paulo a usar tecnologia de software
+                        livre.
+                    </p>
+                    <p>
+                        Dentre os requisitos técnicos de implantação, vale destacar a definição de
+                        padrões de intercâmbio de dados geográficos, compatível com a Open
+                        Geospatial Consortium – OGC, concretizando uma visão voltada para a
+                        transparência, compartilhamento que garanta a operabilidade e o efetivo uso
+                        das informações geoespaciais.
+                    </p>
+
+                <h2 id="5_1_quem">Quem somos</h1>
+            </div>
+
+        </div>
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    </body>
+
+</html>
