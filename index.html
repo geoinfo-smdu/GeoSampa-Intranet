@@ -348,7 +348,7 @@
                         <p><strong>Logradouro:</strong> relação dos tipos de logradouros (rua, avenida, estrada, etc.) e suas respectivas siglas, bem como a descrição das variáveis da base de dados geoespacial dos logradouros.</p>
                             
 
-                        <img class="img-fluid mx-auto justify-content-center py-3" src="images/conceitos_acessar-metadados.png" alt="tela inicial do GeoSampa indicando
+                        <img class="img-fluid mx-auto justify-content-center py-3" src="images/janela_mapa_base_metadados.png" alt="tela inicial do GeoSampa indicando
                         o botão Acessar Metadados no canto superior direito" width="1021px">
                     
                     <h3 id="escala"><br><br>Escala</h3>
@@ -390,7 +390,7 @@
                     <h3><br><br>Mapa Digital da Cidade (MDC)</h3> 
                         <p>Esta é a primeira tela do mapa, ao acessar o GeoSampa. A seguir, serão descritas as alternativas
                             de navegação e ferramentas disponíveis.</p> 
-                        <img class="img-fluid mx-auto justify-content-center py-3" src="images/tela-inicial.png" width="1021px" alt="tela inicial do GeoSampa">
+                        <img class="img-fluid mx-auto justify-content-center py-3" src="images/MDC_home_intra.png" width="1021px" alt="tela inicial do GeoSampa">
 
                     <h3 id="ferramentas-cursor"><br><br>Menu de Ferramentas e tipos de cursor</h3>
 
@@ -512,27 +512,28 @@
                                 <div class="accordion-item">
                                     <h6 class="accordion-header" id="flush-headingNine">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
-                                            <img class="img p-1" src="images/botao_desenho.png" alt="ícone laranja com uma paleta de pintura e um pincel desenhados em branco"> <strong> Desenho</strong>
+                                            <img class="img p-1" src="images/Botao_Lidar_intra.png" alt="ícone azul com ondas desenhadas em branco"> <strong> LiDAR 3D</strong>
                                         </button>
                                     </h6>
                                     <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushFerramentas">
                                        <div class="accordion-body py-2 pe-5">
-                                            Habilita uma janela para desenho com opções de símbolos, formatos, texto e cores. <a href="#item4-3-2">Saiba mais.</a>
+                                            Laser/Lidar* é um aerolevantamento de 2017 e tem como resultado o Modelo Digital do Terreno (MDT). <br>
+                                            E podem ser usados para inúmeras aplicações com auxílio de diversos software. <a href="#lidar3d">Saiba mais.</a>
                                         </div>
                                 </div>
                                 </div>
-                                <div class="accordion-item">
+                                        <div class="accordion-item">
                                     <h6 class="accordion-header" id="flush-headingTen">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
-                                            <img class="img p-1" src="images/botao_lidar3d.jpg" alt="ícone vermelho com ondas desenhadas em branco"> <strong> LiDAR 3D</strong>
+                                            <img class="img p-1" src="images/Botao_Coord_intra.png" alt="ícone com duas linhas perpendiculares e um quadrado no ponto de intersecção entre elas"> <strong> Coordenadas</strong>
                                         </button>
                                     </h6>
                                     <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushFerramentas">
                                        <div class="accordion-body py-2 pe-5">
-                                            Laser/Lidar* é um aerolevantamento de 2017 e tem como resultado o Modelo Digital do Terreno (MDT). <br>
-                                            E podem ser usados para inúmeras aplicações com auxílio de diversos software. <a href="#MDT">Saiba mais.</a>
+                                            Na 1ª aba é possível capturar a coordenada. Clique em "Iniciar Captura" e em seguida clique no local desejado no mapa para obter os resultados em
+                                             coordenadas. Na 2ª aba é possível encontrar o local no mapa através das coordenadas especificadas que podem ser coordenadas planas (y, y), ou
+                                              latitude e longitude, ou latitude e longitude (decimal).
                                         </div>
-                                </div>
                                 </div>
                                 <div class="accordion-item">
                                     <h6 class="accordion-header" id="flush-headingEleven">
@@ -565,12 +566,12 @@
                                 </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <h6 class="accordion-header" id="flush-headingThrirteen">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThrirteen" aria-expanded="false" aria-controls="flush-collapseThrirteen">
+                                    <h6 class="accordion-header" id="flush-headingThirteen">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThirteen" aria-expanded="false" aria-controls="flush-collapseThirteen">
                                             <img class="img p-1" src="images/botao_ajuda.png" alt="ícone com um ponto de interrogação"> <strong> Ajuda</strong>
                                         </button>
                                     </h6>
-                                    <div id="flush-collapseThrirteen" class="accordion-collapse collapse" aria-labelledby="flush-headingThrirteen" data-bs-parent="#accordionFlushFerramentas">
+                                    <div id="flush-collapseThirteen" class="accordion-collapse collapse" aria-labelledby="flush-headingThirteen" data-bs-parent="#accordionFlushFerramentas">
                                        <div class="accordion-body py-2 pe-5">
                                             Exibe uma caixa de diálogo informando todos os botões do menu lateral do Geosampa, as informações sobre os
                                             navegadores compatíveis e os programas utilizados no desenvolvimento do GeoSampa.
@@ -578,12 +579,12 @@
                                 </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <h6 class="accordion-header" id="flush-headingForteen">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseForteen" aria-expanded="false" aria-controls="flush-collapseForteen">
+                                    <h6 class="accordion-header" id="flush-headingFourteen">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen">
                                             <img class="img p-1" src="images/botao_contato.png" alt="ícone com um envelope"> <strong> Contato</strong>
                                         </button>
                                     </h6>
-                                    <div id="flush-collapseForteen" class="accordion-collapse collapse" aria-labelledby="flush-headingForteen" data-bs-parent="#accordionFlushFerramentas">
+                                    <div id="flush-collapseFourteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFourteen" data-bs-parent="#accordionFlushFerramentas">
                                         <div class="accordion-body py-2 pe-5">
                                             Pode ser utilizado para enviar qualquer tipo de mensagem referente ao
                                             portal. <br> Para entrar em contato com a equipe,preencha nome, e-mail e envie sua mensagem.
@@ -604,7 +605,7 @@
                     <div class="row m-xl-3 jutify-content-center" >
 
                         <div class="col py-3">
-                            <div class="card" style="width:16rem;height:25rem;">   
+                            <div class="card" style="width:16rem;height:20rem;">   
                                 <div class="card-body">
                                     <img class="card-img-top p-1" src="images/cursor_seta.png" style="width:35px;height:35px" alt="cursor seta">          
                                     <h6 class="card-title"><strong>Seta</strong></h6>
@@ -615,7 +616,7 @@
                         </div>
 
                         <div class="col py-3">
-                            <div class="card" style="width: 16rem;height:25rem;">   
+                            <div class="card" style="width: 16rem;height:20rem;">   
                                 <div class="card-body">
                                     <img class="card-img-top p-1" src="images/cursor_mira.png" style="width:35px;height:35px" alt="cursor mira">          
                                     <h6 class="card-title"><strong>Mira</strong></h6>
@@ -626,7 +627,7 @@
                         </div>
 
                         <div class="col py-3">
-                            <div class="card" style="width:16rem;height:25rem;">  
+                            <div class="card" style="width:16rem;height:20rem;">  
                                 <div class="card-body">
                                     <img class="card-img-top p-1" src="images/cursor_dedo.png" style="width:35px;height:35px" alt="cursor dedo">          
                                     <h6 class="card-title"><strong>Dedo</strong></h6>
@@ -637,7 +638,7 @@
                         </div>
 
                         <div class="col py-3">
-                            <div class="card" style="width:16rem;height:25rem;">   
+                            <div class="card" style="width:16rem;height:20rem;">   
                                 <div class="card-body">
                                     <img class="card-img-top p-1" src="images/cursor_quadrado.png" style="width:35px;height:35px" alt="cursor quadrado">          
                                     <h6 class="card-title"><strong>Quadrado</strong></h6>
@@ -649,7 +650,7 @@
                         </div>
 
                         <div class="col py-3">
-                            <div class="card" style="width:16rem;height:25rem;">   
+                            <div class="card" style="width:16rem;height:20rem;">   
                                 <div class="card-body">
                                     <img class="card-img-top p-1" src="images/cursor_cruz.png" style="width:35px;height:35px" alt="cursor cruz">          
                                     <h6 class="card-title"><strong>Cruz</strong></h6>
@@ -660,7 +661,7 @@
                         </div>
 
                         <div class="col py-3">
-                            <div class="card" style="width:16rem;height:25rem;">   
+                            <div class="card" style="width:16rem;height:20rem;">   
                                 <div class="card-body">
                                     <img class="card-img-top p-1" src="images/cursor_texto.png" style="width:35px;height:35px" alt="cursor texto">          
                                     <h6 class="card-title"><strong>Cursor de texto</strong></h6>
@@ -676,17 +677,17 @@
                         <p>Você pode escolher um dos mapas base disponíveis como plano de fundo, sendo possível alterá-lo a qualquer momento
                         durante sua navegação. Entretanto, é permitido visualizar apenas um por vez. Também pode-se deixar sem plano de fundo. </p>
 
-                        <img class="img-fluid mx-auto py-3" src="images/mapa-base_camadas.jpg" style="height: 576px; display: flex" alt="caixa de diálogo para seleção de mapas base e camadas, com destaque para
+                        <img class="img-fluid mx-auto py-3" src="images/janela_mapa_base e camadas.png" style="height: 576px; display: flex" alt="caixa de diálogo para seleção de mapas base e camadas, com destaque para
                             os menus 'Mapa Base', 'Camadas' e para o tema 'Absatecimento dentro do menu de camadas">
 
                         <p>Em <strong>Camadas</strong>, está o conteúdo do mapa com as informações georreferenciadas de várias secretarias e órgãos públicos.</p>
                         <p>As camadas estão organizadas em grupos temáticos. Você poderá abrir o grupo clicando no botão <strong>+</strong> e habilitar a camada de interesse.</p>
 
-                        <img class="img-fluid mx-auto justify-content-center px-1 py-4" src="images/camadas.jpg" style="width: 850px;" alt="explicação da etiqueta de rótulo, de como usar o 'tooltip' e como ativar
+                        <img class="img-fluid mx-auto justify-content-center px-1 py-4" src="images/janela_busca_rot_down_leg_meta.png" style="width: 850px;" alt="explicação da etiqueta de rótulo, de como usar o 'tooltip' e como ativar
                             a legenda de camadas que tenham esta característica aplicável">
 
-                        <p>As informações sobre como cada camada foi produzida estão disponíveis no botão <strong>Acessar Metadados</strong>, que se encontra na parte superior direita, conforme
-                        indicado na sessão deste tutorial dedicada aos metadados, que você pode visualizar clicando <a href=#metadados>aqui</a>.</p>
+                        <p> (1) É possível obter mais informações sobre download clicando <a href=#download>aqui</a>.</p>
+                        <p> (2) É possível obter mais informações sobre metadados clicando <a href=#metadados>aqui</a>.</p>
                         
 
                     <h3 id="infos-feicoes-elementos"><br><br>Informações sobre as feições ou elementos do mapa</h3>
@@ -731,57 +732,71 @@
                                 lote, dígito SQL, CodLog, Nome do logradouro, múmero da porta, complemento, situação, uso, área do terreno e área construída.">
 
     
-                    <h3 id="lidar3d"><br><br>LiDAR 3D - Modelo Digital de Terreno (MDT)</h3>
+                    <h3 id="lidar3d"><br><br>LiDAR 3D - MDT e MDS</h3>
                         <p> A partir dos dados obtidos no aerolevantamento de 2017, utilizando um sensor laser emitindo feixes embarcados em helicóptero, 
                             foi realizada a cartografia 3D de toda a cidade. 
                             O produto é uma nuvem de pontos que possibilita a reconstrução do objeto em terceira dimensão.</p>
-                        <p> Com isso, é possível visualizar pontos no terreno (que constituem o MDT – Modelo Digital de Terreno), assim como o Modelo Digital de Superfície – MDS, que compreende as edificações, 
-                            árvores, obras viárias entre outros objetos, na forma nuvem de pontos no mapa digital. O conteúdo está disponível para download e para consulta web. Para download, os arquivos 
-                            estão em formato LAZ (LAS compactado) e podem ser usados para inúmeras aplicações com auxílio de diversos softwares. Com esses dados, por exemplo, a cratera e a cachoeira na 
-                            zona sul da cidade ficam evidentes em imagens a baixo:</p>
-                        <img class="img-fluid mx-auto justify-content-center px-2 py-5" src="images/lidar3d_ex1.jpg" alt="exemplo de mdt" height="350px" width="350px" 
-                            alt="exemplos de imagens 3D hipsométricas produzidas a partir do Modelo Digital de Terreno - MDT">
-                        <img class="img-fluid mx-auto justify-content-center px-2 pb-5" src="images/lidar3d_ex2.jpg" alt="segunda parte do exemplo" height="450px" width="450px">
+                        <p> Com isso, é possível visualizar pontos no terreno que constituem o Modelo Digital de Terreno (MDT), assim como o Modelo Digital de Superfície (MDS), ambos na forma de nuvem de 
+                            pontos no mapa digital. O conteúdo está disponível para download e para consulta web. Para download, os arquivos estão em formato LAZ (LAS compactado) e podem ser usados para 
+                            inúmeras aplicações com auxílio de diversos softwares. Com esses dados, por exemplo, a cratera e a cachoeira na zona sul da cidade ficam evidentes em imagens a baixo:</p>                    
+                        
+                        <div class="py-5">
+                                <img src="images/lidar3d_ex1.jpg" alt="exemplo de mdt" height="350px" width="350px">
+                                <img src="images/lidar3d_ex2.jpg" alt="exemplo de mdt" height="450px" width="450px">
+                        </div>
                                 
-                        <p> Para a visualização web dos dados 3D, localize e clique na ferramenta  <img src="images/botao_lidar3d.jpg" alt="ícone LiDAR 3D"> "LiDAR 3D" e selecione a porção do território 
-                            da cidade que deseja visualizar. Após esse comando, abrirá uma tela para que escolher que tipo de dado se quer abrir no visualizador web: MDS, onde estão representados 
+                        <p> Para a visualização web dos dados 3D, clique no botão  <img src="images/Botao_Lidar_intra.png" alt="ícone LiDAR 3D"> "LiDAR 3D" no menu à esquerda e selecione a porção do território 
+                            do município que deseja visualizar. Após esse comando, abrirá uma tela para escolher que tipo de dado se quer abrir no visualizador web: MDS, onde estão representados 
                             o terreno e as edificações, árvores, obras viárias e outros objetos; ou MDT, em que somente o terreno é representado.</p>
 
-                        <iframe width="900" height="500" src="https://www.youtube.com/embed/8gQUa9nh5mA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="py-5">
+                        
+                            <iframe height="500" width="900" src="https://www.youtube.com/embed/8gQUa9nh5mA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+                        </div>
+                        
                         <p>Depois escolher seu local de interesse e o tipo de modelo digital, clique em “Visualizar” e você será direcionado para uma nova janela, fora do mapa do GeoSampa, 
                             onde serão carregados os dados do LiDAR. Nesse ambiente, você poderá aproximar a visualização do modelo 3D, bem como fazer medições e análises.</p>
 
                         <img class="img-fluid mx-auto justify-content-center py-5" src="images/lidar3d_vizualizador.jpg" alt="tela do visualizador lidar 3d" height="576px" width="1021px">
 
                         <p><strong>O visualizador LiDAR possui as seguintes funções com o mouse:</strong></p>
+
                         <p> Botão direito, você pode mover o espaço analisado dentro da janela de visualização</p>
 
-                        <iframe width="900" height="500" src="https://www.youtube.com/embed/eNNWcycTDso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="py-5">
 
-                        <p>&nbsp;</p>
+                            <iframe width="900" height="500" src="https://www.youtube.com/embed/eNNWcycTDso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        </div>
 
                         <p> Botão esquerdo, você ajusta a orientação da visualização do modelo 3D (rotacionar, inclinar, ajustar o ângulo de visão, etc.)</p>
+                        
+                        <div class="py-5">
+                        
+                            <iframe width="900" height="500" src="https://www.youtube.com/embed/G0UTql4x6ss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                        <iframe width="900" height="500" src="https://www.youtube.com/embed/G0UTql4x6ss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
 
-                        <p>&nbsp;</p>
+                        <p> Botão de rolagem (scroll), você dá zoom no modelo 3D </p>
 
-                        <p> Botão de rolagem (scroll), você dá zoom no modelo 3D</p>
+                        <div class="py-5">
+                        
+                            <iframe width="900" height="500" src="https://www.youtube.com/embed/EPWOuHub9bw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                        <iframe width="900" height="500" src="https://www.youtube.com/embed/EPWOuHub9bw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                        <p>&nbsp;</p>
+                        </div>
 
                         <p> O visualizador LiDAR possui menus de configurações e ferramentas, dispostos na lateral esquerda da tela, que permitem que você aproxime 
                             o modelo 3D, calcule altura, entre outras funções. Entre as ferramentas disponíveis nesse menu, você vai encontrar o “Orçamento de pontos”, 
                             onde você pode escolher quantos pontos vão estar disponíveis para visualização na nuvem de pontos, bem como ferramentas para medir altura de 
                             edificações, distâncias, ângulo, volume, etc.</p>
 
-                        <iframe width="900" height="500" src="https://www.youtube.com/embed/hR_KjoM8e20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="py-5">
+                        
+                            <iframe width="900" height="500" src="https://www.youtube.com/embed/hR_KjoM8e20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                        <p>&nbsp;</p>
-
+                        </div>
+                      
                     <h3 id="medicoes"><br><br>Medições</h3>
                         <h4>Calcular distâncias, área e ângulos</h4>
                             <p> Ao clicar no botão <img src="images/botao_medicoes.png"><img src="images/botao_medicoes-clique.png"
@@ -807,29 +822,20 @@
                                 O ângulo será dado somente em relação ao último e seguimento feito e o anterior a este. </p>       
                             <p>O resultado da medição não tem caráter documental nem precisão.</p>
 
-                        
-
-
-
-
-
-
-
-
                 <h1 id="ferramentas-avançadas"><br><br>Ferramentas Avançadas de Análise</h1>
                 <hr>
                 <p>Todas as ferramentas dessa seção, podem ser localizadas no canto superior direito do site.</p>
-                <img src="images/031_01_desenho.png">              
-                            <h3 id="desenho"><br><br>Ferramenta de Desenho</h3>
+                <img src="images/031_01_desenho.png" style="display: flex; width: 300px">              
+                            <h3 id="desenho"><br><br>Ferramenta de Desenho <img src="images/botao_desenho.png" alt="ícone do botão de 'Desenho'"> </h3>
                                         <p> Ao clicar na ferramenta de <strong>desenho</strong> <img src="images/botao_desenho.png" alt="ícone do botão de 'Desenho'">, uma janela será habilitada.</p>
-
-                                        <img src="images/desenho_explicação.jpg" class="img-fluid mx-auto justify-content-center py-3" style="display: flex; height: 576px;"
-                                                alt="Imagem mostrando as opções de desenhar no mapa. 
-                                                Primeiro, o modo de desenho, que pode ser ponto, linha, cículo, polígono ou texto.
-                                                Segundo, a cor do desenho, que pode ser azul, verde, amarelo, laranja-avermelhado, cinza ou só contorno escuro.
-                                                Terceiro, opções de edificações nos desenhos já feitos: limpar desenho, 
-                                                limpar desenho selecionado, mover vértice, mover ponto e mover polígono ou texto.">
-                                        
+                                        <div>
+                                            <img src="images/desenho_explicação.jpg" class="img-fluid mx-auto justify-content-center py-3" style="display: flex; height: 576px;"
+                                            alt="Imagem mostrando as opções de desenhar no mapa. 
+                                            Primeiro, o modo de desenho, que pode ser ponto, linha, cículo, polígono ou texto.
+                                            Segundo, a cor do desenho, que pode ser azul, verde, amarelo, laranja-avermelhado, cinza ou só contorno escuro.
+                                            Terceiro, opções de edificações nos desenhos já feitos: limpar desenho, 
+                                            limpar desenho selecionado, mover vértice, mover ponto e mover polígono ou texto.">
+                                        </div>
                                         <ol class="list-group list-group-numbered p-3 my-3">
                                             <li class="list-group-item">Selecione o tipo de desenho que deseja inserir.</li>
                                             <li class="list-group-item">Escolha a cor de sua preferência e, em seguida, insira o desenho no mapa.</li>
@@ -848,21 +854,25 @@
                                             height="?px"
                                             width="?px">
                                             -->
-                                <h3 id="consulta-simples"><br><br>Consulta Simples</h3>
+                                <h3 id="consulta-simples"><br><br>Consulta Simples <img src="images/icone_02_consulta_simples-off.png" alt="ícone do botão de 'consulta simples'"> </h3>
                                     <p>A ferramenta <img src="images/icone_02_consulta_simples-off.png">
                                         permite pesquisar elementos do mapa a partir de um
                                         atributo predefinido. Você poderá pesquisar, por exemplo, escolas e
                                         hospitais pelo nome. Escolha qual tema pretende pesquisar em
                                         “camadas” e preencha o campo do atributo.</p>
-                                    <img src="images/032_01_consulta simples.png">    
+                                    <div>
+                                    <img src="images/032_01_consulta simples.png" style="display: flex">
+                                    </div>    
                                     <p><br>Nessa opção, os atributos são predefinidos e você só poderá pesquisar um atributo de cada vez. 
-                                        Caso queira escolher o atributo a ser pesquisado, utilize a consulta avançada .</p>
+                                        Caso queira escolher o atributo a ser pesquisado, utilize a consulta avançada.
                                     <p>No exemplo abaixo, foi feita a pesquisa das unidades de ensino fundamental e médio, 
                                         cujos nomes contenham o termo “Maria”. Ao clicar em “localizar”, os pontos correspondentes ficarão em destaque no mapa. </p>
                                     
-                                    <img class="img-fluid mx-auto justify-content-center py-3"
-                                    src="images/032_03_consulta simples.png"
-                                    alt="Tela GeoSampa-Intranet com a consulta de escolas de nome 'Maria' executada.">   
+                                    <div>
+                                    <img src="images/032_03_consulta simples.png"
+                                         alt="Tela GeoSampa-Intranet com a consulta de escolas de nome 'Maria' executada."
+                                    style="display: flex">
+                                    </div>   
                          
                                 <h3 id="consulta-alfa"><br><br>Consulta Alfanumérica</h3>
                                     <p>A consulta alfanumérica permite que você escolha qual atributo pesquisar em uma mesma camada.</p>
@@ -871,7 +881,10 @@
                                     <p>Caso queira escolher mais de um parâmetro, escolha o operador lógico <strong>(E/OU)</strong> e clique em "Pesquisar".</p>
                                     <p>Ao montar sua consulta, notará que o campo "Expressão" será automaticamente 
                                         preenchido com a linha de comanda definida.</p>
-                                    <img src="images/033_consulta alfanumerica.png">
+                                    
+                                    <div>
+                                    <img src="images/033_consulta alfanumerica.png" style="display: flex">
+                                    </div>
                                     
                                     <p><br>Caso necessário, você poderá salvar sua consulta para acessos futuros. 
                                         Defina um nome e clique no botão salvar antes de concluir a pesquisa. 
@@ -879,61 +892,124 @@
                                     <p>Para visualizar a lista de resultados, nesse caso, a relação das bibliotecas no bairro da Mooca, 
                                         clique em  <img src="images/icone_07_painel de selecao.png">.
                                         Será exibida uma tabela com a mesma informção geoespacial do mapa</p>
-                                    <img src="images/034_consulta alfanumerica.png"><br>
+                                    
+                                    <div>    
+                                    <img src="images/034_consulta alfanumerica.png" style="display: flex"><br>
+                                    </div>
+                                    
                                     <p><br><strong>Importante:</strong> Os atributos disponíveis para seleção correspondem a 
                                         todos os atributos existentes na base de dados geoespacial e não apenas às 
                                         informações visualizadas por meio do botão de informação. Em caso de dúvida 
                                         com o nome do atributo, recomendamos realizar uam seleção de alguns elementos 
                                         da camada e acessar o painel de resultados via botão.</p>
-                                <h3 id="consulta-espacial"><br><br>Consulta Espacial</h3>
+                                <h3 id="consulta-espacial"><br><br>Consulta Espacial <img src="images/icone_04_consulta_espacial-off.png"> </h3>
                                     <p>Para realizar a Consulta Espacial é necessário já ter uma seleção prévia do tema de interesse. Como exemplo, vamos pesquisar o tema <strong>SACOLÕES</strong> e correlacioná-los com <strong>DISTRITOS</strong>.</p>
                                     <p>A partir desta s eleção, você poderá realizar uma análise que considere a situação espacial desses pontos, como por exemplo:</p>
                                         <p style="text-indent: 25px;">-Quais são aqueles contidos no distrito "República"?</p>
                                         <p style="text-indent: 25px;">-Quais são aqueles que estão a uma distância de 1,5 km(buffer) desse limite?</p>
                                     <p>Nos exemplos propostos, as camadas "sacolões" e "distritos" deverão estar ativas no menu. Selecione o distrito de interesse utilizando o botão <img src="images/botao_selecao.png">, clique em <img src="images/icone_04_consulta_espacial-off.png"> e selecione "espacial".</p>
-                                    <br><img src="images/035_consulta espacial.png">
-                                    <p><br>Preencha o campo "buffer" com o valor desejado(no exemplo, 1500m) e clique em aplicar. O mapa mostrará a área do buffer em amarelo.</p>
-                                    <br><img src="images/036_consulta espacial.png">
-                                    <p><br>Em seguida, selecione o operador espacial (contém, está contido, intersecciona, etc.) e a camada de interesse.</p>
+                                    
+                                    <div>
+                                        <img src="images/035_consulta espacial.png" style="display: flex">
+                                    </div>
+
+                                    <p>Preencha o campo "buffer" com o valor desejado(no exemplo, 1500m) e clique em aplicar. O mapa mostrará a área do buffer em amarelo.</p>
+                                    
+                                    <div>
+                                    <img src="images/036_consulta espacial.png" style="display: flex">
+                                    </div>
+
+                                    <p>Em seguida, selecione o operador espacial (contém, está contido, intersecciona, etc.) e a camada de interesse.</p>
                                     <p>O resultado será os sacolões que estão no distrito da República e na área delimita pelo buffer de 1500m a partir do limite distrital.</p>
-                                    <br><img src="images/037_consulta avancada.png">
-                                    <p><br>Outra possibilidade é, a partir da seleção dos elementos no mapa, verificar quais outros equipamentos estão em sua área de influência.</p>
+                                    
+                                    <div>
+                                        <img src="images/037_consulta avancada.png" style="display: flex">
+                                    </div>
+                                    
+                                    <p>Outra possibilidade é, a partir da seleção dos elementos no mapa, verificar quais outros equipamentos estão em sua área de influência.</p>
                                     <p>No caso abaixo, destacamos uma área de ZEIS e definimos um buffer de 200m onde podem ser localizados os equipamentos de educação e esporte.</p>
-                                    <br><img src="images/038_consulta avancada.png">
-                                <h3 id="consulta-agrupada-gráfico"><br><br>Consulta agrupada e Gráfico</h3>
+                                    
+                                    <div>
+                                        <img src="images/038_consulta avancada.png" style="display: flex">
+                                    </div>
+
+                                <h3 id="consulta-agrupada-gráfico"><br><br>Consulta agrupada e Gráfico <img src="images/icone_05_graficos-off.png"> </h3>
                                     <p>Permite obter informações numéricas ou estátisticas e agrupar essas informações por outro atributo da própria camada geoespacial.</p>
                                     <p>Como exemplo, vamos consultar qual é a área ocupada por cada tipo de vegetação da camada "Remanescentes do Bioma Mata Atlântica".</p>
-                                    <br><img src="images/039_consulta agrupada e grafico.png">
-                                    <p><br>Após selecionar a camada, clique em <img src="images/icone_05_graficos-off.PNG">.</p>
+                                    
+                                    <div>
+                                    <img src="images/039_consulta agrupada e grafico.png" style="display: flex">
+                                    </div>
+                                    
+                                    <p>Após selecionar a camada, clique em <img src="images/icone_05_graficos-off.png">.</p>
                                     <p> Selecione "camada ativa". Verá que os campos "Grupo" e "Camada" serão preenchidos automaticamente.</p>
-                                    <br><img src="images/040_consulta avancada.png">
+
+                                    <div>
+                                    <img src="images/040_consulta avancada.png" style="display: flex">
+                                    </div>
+
                                     <p><br>Escolha um operador. Nesse caso, como queremos saber o total de área, o operador será <strong>SOMA</strong></p>
-                                    <br><img src="images/041_consulta avancada.png">
+
+                                    <div>
+                                        <img src="images/041_consulta avancada.png" style="display: flex; width: 400px">
+                                    </div>
+
                                     <p><br>O operador escolhido foi "Soma", o "alvo" é quantidade em m² de área de vegetação. Nesta caixa, é possível selecionar "contagem", "Máximo", "Mínimo" e "Média".</p>
                                     <p>Uma vez definida a operação de soma das áreas, você poderá escolher como agrupá-las. VocÇe poderá escolher um atributo da própria camada como no exemplo calculado. Clique em "gerar".</p>
                                     <p>Nesta seleção é possível agrupar a informação por meio de atributo da camada, neste caso, pela classe da vegeteção. Clique em "Gerar".</p>
                                     <p>O resultado irá aparecer ao clicar no botão  <img src="images/icone_07_painel de selecao.png">.</p>
-                                    <br><img src="images/042_resultados.png">
+                                    
+                                    <div>
+                                        <img src="images/042_resultados.png">
+                                    </div>
+
                                     <p><br>A sua pesquisa agrupada também pode ser apresentada em forma de gráfico. Clicar na aba "Gráfico" na parte superior esquerda da janela.</p>
                                     <p>A seguinte janelá irá aparecer:</p>
-                                    <br><img src="images/044_resultados.png">
+
+                                    <div>
+                                        <img src="images/044_resultados.png">
+                                    </div>
+
                                     <p><br>Para o exemplo, foram editados o título e os rótulos, e foi escolhido o tipo do gráfico: gráfico de barras. Clique em "gerar gráfico".</p>
-                                    <br><img src="images/045_resultados.png">
+                                    
+                                    <div>
+                                        <img src="images/045_resultados.png">
+                                    </div>
+
                                     <p><br> O resultado aparecerá na janela lateral. Para melhor visuaçização clicar em "expandir gráfico" para visualizá-lo em outra janela.</p>
                                     <p>Para imprimí-lo, clique no botão<img src="images/botao_impressao.png">.</p>
-                                    <br><img src="images/046_resultados.png">
+
+                                    <div>
+                                        <img src="images/046_resultados.png">
+                                    </div>
+
                                     <p><br>Também é possível agrupar os dados pelo território ou por feições geoespaciais. Veja o exemplo em que foi calculada a quantidade de pontos de ônibus em cada uma das subprefeituras.    </p>
                                     <p>Operador neste caso é "Contagem", o alvo são os códigos de identificação dos pontos de ônivos. Os códifos identificadores são únicos e não se repetem, por isso é possível saber a quantidade de pobtos de ônibus.</p>
-                                    <br><img src="images/047_consulta avancada.png">
+                                    
+                                    <div>
+                                        <img src="images/047_consulta avancada.png" style="display: flex">
+                                    </div>
+
                                     <p><br>A quantidade de pontos de ônibus será agrupada pelas subprefeituras.</p>
                                     <p>Após clicar em gerar, o resultado obtido é:</p>
-                                    <br><img src="images/048_resultados.png">
-                                    <br>
-                                <h3 id="importar-arquivos"><br><br>Importar arquivos(SHP e KMZ)</h3>
+                                    
+                                    <div>
+                                        <img src="images/048_resultados.png">
+                                    </div>
+
+                                <h3 id="importar-arquivos"><br><br>Importar arquivos(SHP e KMZ) <img src="images/icone_06_importar_arquivos_-off.png"> </h3>
                                     <p>Clicando no botão <img src="images/icone_06_importar_arquivos_-off.png">, você poderá importar arquivos do tipo SHP(Shape) ou KMZ(KeyholeMarkupLanguage) para o GeoSampa.</p>
-                                    <br><img src="images/049_01_importar.png">
+                                    
+                                    <div>
+                                        <img src="images/049_01_importar.png" style="display: flex">
+                                    </div>
+
                                     <p><br>Escolha o tipo de arquivo e, em seguida, clique em "importar". Localize o arquivo em seu computador e clique em "abrir".</p>
-                                    <br><img src="images/049_02_mensagem.png">
+                                    
+                                    <div>
+                                        <img src="images/049_02_mensagem.png" style="display: flex">
+                                    </div>
+
                                     <p><br>Observações:</p>
                                     <p style="text-indent: 25px;">-O limite do tamanho dos arquivos para importação é 5MB;</p>
                                     <p style="text-indent: 25px;">-Arquivos tipo SHP deverão estar zipados(.zip) e conter as extensões .shp, .shx, dbfe e .prf;</p>
@@ -943,23 +1019,31 @@
                             
                 <h1 id="download"><br><br>Download</h1>  
 
-                    <hr>
+                    <p>Todo o conteúdo do GeoSampa está disponível para download.<br>Com exceção dos casos em que se faz a partir da aba de pesquisa 
+                        <img src="images/botao_pesquisa.png" alt="ícone lupa, botão 'Pesquisar'"> 
+                        (croquis e plantas, marco geodésico e apoio terrestre, imagem/MDC), os downloads são feitos clicando no botão 
+                        <img src="images/botao_download.png" alt="ícone de download de arquivos"> ou através do ícone localizado ao lado da 
+                        respectiva camada.
+                    </p>
 
-                    <h3 id="download-arquivos"><br><br>Download de arquivos</h3>                
-                        <p>Todo o conteúdo do GeoSampa está disponível para download. 
-                            Para isso, clique no ícone <img src="images/botao_download.png" alt="ícone de download de arquivos"> 
-                            escolha o tema de interesse e, em seguida, os arquivos desejados.  </p>
-                        
+                    <h3 id="download-arquivos"><br><br>Download de arquivos</h3>
+                        <p>Clique no ícone <img src="images/botao_download.png" alt="ícone de download de arquivos"> 
+                            escolha o tema de interesse e, em seguida, os arquivos desejados.  </p>                
+                                                
                         <p>Alguns arquivos podem estar divididos por distritos (como "Edificação", por
                         exemplo) devido ao grande volume de dados.
                         Lembre-se de verificar o local em que serão armazenados os arquivos
                         obtidos pelo download nas configurações de seu navegador.</p>
-                        <img class="img-fluid mx-auto justify-content-center py-3" src="images/download_camada1.jpg" style="display: flex; height: 480px;"
-                            alt="Janela de 'Downloade de Camadas' mostrando a lista de temas que podem ser escolhidos para download"> 
-                        <img class="img-fluid mx-auto justify-content-center py-3" src="images/download_camada2.jpg" style="display: flex; height: 480px;"
-                            alt="Janela de 'Downloade de Camadas' após escolha de tema e camada para download, para selecionar arquivo de interesse">
 
-                        <br>
+                        <div>
+                            <img class="img-fluid mx-auto justify-content-center py-3" src="images/download_camada1.jpg" style="display: flex"
+                            alt="Janela de 'Downloade de Camadas' mostrando a lista de temas que podem ser escolhidos para download">
+                        </div>
+                            
+                        <div>
+                            <img class="img-fluid mx-auto justify-content-center py-3" src="images/download_camada2.jpg" style="display: flex"
+                            alt="Janela de 'Downloade de Camadas' após escolha de tema e camada para download, para selecionar arquivo de interesse">
+                        </div>
 
                         <p>Alguns deles estão disponíveis em mais de um formato. São eles:</p>
 
@@ -1026,19 +1110,19 @@
                         <p> As camadas Área Urbanizada Regularizada - AU e Arruamento -
                             ARR estão no grupo Cadastro dentro do subgrupo Parcelamento.</p>
 
-                        <img  class="img-fluid mx-auto justify-content-center p-5" src="images/download_cadastro-area-publica.jpg" style="display: flex;" height="100%"
+                        <img  class="img-fluid mx-auto justify-content-center p-5" src="images/janela_download_CAP_cidadao.png" style="display: flex;" height="100%"
                                     alt="Imagem mostrando onde localizar a camada referência que precisa estar ativada para download de Cadastro de Área Pública:
                                         grupo Cadastro, subgrupo Área Pública, camada Cadastro de área pública - CAP.">
 
-                        <img  class="img-fluid mx-auto justify-content-center p-5" src="images/download_croqui-patrimonial.jpg" style="display: flex;" height="100%"
+                        <img  class="img-fluid mx-auto justify-content-center p-5" src="images/janela_download_croqui_patrim_cidadao.png" style="display: flex;" height="100%"
                                     alt="Imagem mostrando onde localizar a camada referência que precisa estar ativada para download de Croqui Patrimonial:
                                         grupo Cadastro, subgrupo Área Pública, camada Croqui Patrimonial.">
                         
-                        <img  class="img-fluid mx-auto justify-content-center p-5" src="images/download_area-cedida.jpg" style="display: flex;" height="100%"
+                        <img  class="img-fluid mx-auto justify-content-center p-5" src="images/janela_download_area_cedida_cidadao.png" style="display: flex;" height="100%"
                                     alt="Imagem mostrando onde localizar a camada referência que precisa estar ativada para download de Área Cedida:
                                         grupo Cadastro, subgrupo Área Pública, camada Área Cedida.">
                                     
-                        <img  class="img-fluid mx-auto justify-content-center p-5" src="images/download_planta-dis-dup.jpg" style="display: flex;" height="100%"
+                        <img  class="img-fluid mx-auto justify-content-center p-5" src="images/janela_download_plantas_cidadao.png" style="display: flex;" height="100%"
                                     alt="Imagem mostrando onde localizar a camada referência que precisa estar ativada para download de Planta DIS DUP:
                                         grupo Legislação Urbana, subgrupo Requalifica Centro, camada Utilidade Pública e Interesse.">
 
@@ -1110,11 +1194,11 @@
                     <p>Clique em <img src="images/botao_pesquisa.png" alt="ícone lupa, botão 'Pesquisar'"> e escolha a aba <strong>Endereço</strong>. Preencha os campos sem acentuação.
                         O “tipo” de logradouro (rua, avenida, viela, estrada etc.) e o “título” do logradouro (Santo, Padre, Engenheiro etc.) não são obrigatórios, mas podem ajudar a refinar sua busca. 
                         Caso utilizados, insira-os nos campos específicos e não com o nome do logradouro.</p> 
-                    <img class="img-fluid mx-auto justify-content-center px-2 py-3" src="images/pesquisa_endereco1.jpg" style="display: flex; height: 430px;" alt="Janela da ferramenta 'Pesquisar', com a aba 
+                    <img class="img-fluid mx-auto justify-content-center px-2 py-3" src="images/pesquisa_endereco1.jpg" style="display: flex; width: 400px" alt="Janela da ferramenta 'Pesquisar', com a aba 
                         'Endereço' selecionada, pesquisando pela 'Rua Paraiso'"> 
                     <p>Atente para a possível existência de mais de uma página com opções
                         de logradouros com o nome pesquisado.</p>
-                    <img class="img-fluid mx-auto justify-content-center px-2 py-4" src="images/pesquisa_endereco2.jpg" style="display: flex; height: 586px;" alt="Resultado de pesquisa pela 'Rua Paraiso', com o 
+                    <img class="img-fluid mx-auto justify-content-center px-2 py-4" src="images/pesquisa_endereco2.jpg" style="display: flex; width: 400px" alt="Resultado de pesquisa pela 'Rua Paraiso', com o 
                         seguimento do logradouro em questão destacado"> 
                     <p>Na pesquisa por endereço e número, o ponto resultante aparecerá dentro do respectivo lote.
                         Caso o número pesquisado não conste no banco de dados, a pesquisa indicará o local mais próximo no eixo da via. </p>
@@ -1131,12 +1215,18 @@
                         <p> À esquerda, localize a ferramenta “Pesquisar”, selecione a aba
                             IPTU e preencha as informações de setor, quadra e lote, depois clique
                             em “Listar”.</p>
-                        <img class="img-fluid mx-auto justify-content-center py-3" src="images/iptu.jpg"height="576px" width="1021px" alt="Janela de pesquisa com a aba 'IPTU' ativada, 
-                            com pesquisa pelo preenchimento dos campos 'Setor', 'Quadra' e 'Lote'"> 
+
+                        <div>    
+                            <img class="img-fluid mx-auto justify-content-center py-3" src="images/iptu.jpg"height="576px" width="1021px" alt="Janela de pesquisa com a aba 'IPTU' ativada, 
+                            com pesquisa pelo preenchimento dos campos 'Setor', 'Quadra' e 'Lote'">
+                        </div>    
+                            
                         <p> Aparecerá uma caixa para verificação de acesso e depois as 
                             informações do IPTU do lote indicado.</p>
-                        <img class="img-fluid mx-auto justify-content-center py-3" src="images/iptu_dados_v2.jpg" style="display: flex;" alt="Informações do IPTU do lote indicado na imagem anterior, resultado da pesquisa"> 
 
+                        <div>
+                            <img class="img-fluid mx-auto justify-content-center py-3" src="images/iptu_dados_v2.jpg" style="display: flex;" alt="Informações do IPTU do lote indicado na imagem anterior, resultado da pesquisa"> 
+                        </div>    
 
                     <h3 id="zoneamento"><br><br>Pesquisa sobre o zoneamento - SISZON</h3>
                         <p>Essa pesquisa traz a consulta ao Sistema de Zoneamento (SISZON). No botão <strong>Pesquisar</strong> <img src="images/botao_pesquisa.png" alt="ícone lupa, botão 'Pesquisar'"> , localize a aba Zoneamento 
@@ -1188,8 +1278,10 @@
                     
                     <p>Em seguida, será exibida uma janela de integração, apresentando informações relacionadas ao tombamento do imóvel.</p>
 
-                    <img  class="img-fluid mx-auto justify-content-center py-3" src="images/cadastro-imoveis-tombados2.jpg" width="576px"
+                    <div class = "py-5">
+                    <img  src="images/cadastro-imoveis-tombados2.jpg" width="576px"
                         alt="Janela dos 'Dados de Integração' com o banco de dados do 'CIT - Cadastro de Imóveis Tombados', com exemplo de resultado para um lote">
+                    </div>
 
                     <p>Essas informações podem ser salvas ou impressas, na forma de uma certidão digital, clicando em “Visualizar Impressão”.</p>
 

@@ -68,6 +68,11 @@ img {
     height: auto;
     }
 
+.img-custom {
+  width: auto !important;
+  max-width: none;
+  flex: none;
+}
 
 .nav-pills a.nav-link.active {
     background-color: rgba(201, 141, 137, 0.116);
@@ -115,13 +120,13 @@ h3{
 }
 
 h4{
-    margin-top: 4.5rem;
+    margin-top: 2.5rem !important;
     margin-bottom: 1.2rem;
     font-weight: 350;
 }
 
 h5{
-    margin-top: 4rem;
+    margin-top: 4rem !important;
     margin-bottom: 1.2rem;
     font-weight: 300;
 }
